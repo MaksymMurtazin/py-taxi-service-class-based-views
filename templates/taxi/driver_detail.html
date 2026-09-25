@@ -11,7 +11,7 @@
     {% for car in driver.cars.all %}
       <hr>
       <p class="text-muted">id: {{ car.id }}</p>
-      <p>{{ car.model }} {{ author.manufacturer }}</p>
+      <p>{{ car.model }} {{ car.manufacturer }}</p>
     {% empty %}
       <p>No cars!</p>
     {% endfor %}
