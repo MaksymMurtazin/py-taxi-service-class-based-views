@@ -6,7 +6,9 @@
   {% if manufacturer_list %}
     <table>
       {% for manufacturer in manufacturer_list %}
-        <li>{{ manufacturer.name }} ({{ manufacturer.country }})</li>
+        <tr>
+          <td>{{ manufacturer.name }} ({{ manufacturer.country }})</td>
+        </tr>
       {% endfor %}
     </table>
   {% else %}

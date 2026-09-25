@@ -4,10 +4,12 @@
   <h1>Driver List</h1>
 
   {% if driver_list %}
-    <ul>
+    <table>
       {% for driver in driver_list %}
-        <li><a href="{{ driver.get_absolute_url }}">{{ driver.username }}</a></li>
+        <tr>
+          <td><a href="{{ driver.get_absolute_url }}">{{ driver.username }}</a></td>
+        </tr>
       {% endfor %}
-    </ul>
+    </table>
   {% endif %}
 {% endblock %}
